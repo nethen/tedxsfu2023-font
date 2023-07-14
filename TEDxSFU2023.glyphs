@@ -11,7 +11,8 @@ R,
 S,
 H,
 E,
-A
+A,
+K
 );
 axes = (
 {
@@ -50,7 +51,7 @@ visible = 1;
 glyphs = (
 {
 glyphname = A;
-lastChange = "2023-07-14 06:31:05 +0000";
+lastChange = "2023-07-14 08:32:39 +0000";
 layers = (
 {
 layerId = m01;
@@ -328,10 +329,67 @@ unicode = 74;
 },
 {
 glyphname = K;
-lastChange = "2023-07-06 07:15:09 +0000";
+lastChange = "2023-07-14 08:43:58 +0000";
 layers = (
 {
+hints = (
+{
+name = _corner.rightSerif;
+options = 1;
+origin = (0,0);
+type = Corner;
+},
+{
+name = _corner.rightSerif;
+options = 1;
+origin = (0,2);
+type = Corner;
+},
+{
+name = _corner.leftSerif;
+origin = (0,3);
+type = Corner;
+}
+);
 layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(20,0,l),
+(150,900,l),
+(137.5,900,l),
+(0,0,l)
+);
+},
+{
+closed = 1;
+nodes = (
+(135,564,l),
+(271,561.5,ls),
+(421.5,558.5,o),
+(425,485,o),
+(430,425,cs),
+(440,305,o),
+(444,176,o),
+(444,135,c),
+(450,135,l),
+(450,575,l),
+(135,575,l)
+);
+},
+{
+closed = 1;
+nodes = (
+(155.5,575,l),
+(187,631.5,o),
+(199,659.5,o),
+(450,900,c),
+(375,900,l),
+(135,575,l)
+);
+}
+);
 width = 450;
 }
 );
