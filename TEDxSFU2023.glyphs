@@ -6,17 +6,16 @@ DisplayStrings = (
 "/_part.stroke B",
 "/_part.bowl",
 "/_part.bowl P",
-B,
+"/_part.stem B",
 R,
-S,
+"/_part.stem S",
 H,
 E,
 A,
 K,
 Q,
 G,
-I,
-"/_part.pointstem L"
+"/_part.staff/_part.staff S"
 );
 axes = (
 {
@@ -80,7 +79,7 @@ unicode = 65;
 },
 {
 glyphname = B;
-lastChange = "2023-07-13 02:49:57 +0000";
+lastChange = "2023-07-16 23:02:00 +0000";
 layers = (
 {
 layerId = m01;
@@ -104,7 +103,7 @@ ref = _part.bowl;
 piece = {
 serifLength = 50;
 stemAngle = -100;
-stemLength = 0;
+stemLength = 100;
 stemWidth = 0;
 };
 ref = _part.stem;
@@ -417,7 +416,7 @@ unicode = 74;
 },
 {
 glyphname = K;
-lastChange = "2023-07-14 08:53:16 +0000";
+lastChange = "2023-07-16 23:17:07 +0000";
 layers = (
 {
 hints = (
@@ -470,7 +469,7 @@ closed = 1;
 nodes = (
 (155.5,561.5,l),
 (187,618,o),
-(199,659.5,o),
+(332,803.5,o),
 (450,900,c),
 (375,900,l),
 (135,561.5,l)
@@ -484,7 +483,7 @@ unicode = 75;
 },
 {
 glyphname = L;
-lastChange = "2023-07-16 22:50:16 +0000";
+lastChange = "2023-07-16 22:51:43 +0000";
 layers = (
 {
 layerId = m01;
@@ -496,11 +495,11 @@ scale = (1,1.0227);
 {
 closed = 1;
 nodes = (
-(387,5,o),
-(397,17.5,o),
+(353,5,o),
+(375,17.5,o),
 (446.5,152.5,c),
 (450,150,l),
-(400,0,l),
+(375,0,l),
 (125,0,l),
 (125,5,l),
 (200,5,l)
@@ -688,22 +687,47 @@ unicode = 82;
 },
 {
 glyphname = S;
-lastChange = "2023-07-11 18:46:51 +0000";
+lastChange = "2023-07-16 23:18:55 +0000";
 layers = (
 {
 layerId = m01;
 shapes = (
 {
 piece = {
-serifLength = 0;
+serifLength = 100;
 stemAngle = -100;
 stemLength = 0;
 stemWidth = 0;
 };
 ref = _part.stem;
+},
+{
+piece = {
+staffLength = 0;
+staffWidth = 0;
+};
+pos = (-49.5,0);
+ref = _part.staff;
+scale = (0.8325,1);
+},
+{
+closed = 1;
+nodes = (
+(450,100,l),
+(449.5,451,l),
+(160,755,l),
+(160,762,o),
+(194,869.5,o),
+(209,900,c),
+(200,900,l),
+(150,750,l),
+(432,467.5,o),
+(442.5,300,o),
+(442.5,100,c)
+);
 }
 );
-width = 600;
+width = 450;
 }
 );
 unicode = 83;
@@ -1314,7 +1338,7 @@ topValue = 100;
 {
 export = 0;
 glyphname = _part.pointstem;
-lastChange = "2023-07-14 05:51:44 +0000";
+lastChange = "2023-07-16 22:52:19 +0000";
 layers = (
 {
 hints = (
@@ -1328,6 +1352,7 @@ type = Corner;
 name = _corner.rightSerif;
 options = 1;
 origin = (0,2);
+scale = (1.37,1);
 type = Corner;
 },
 {
@@ -1355,7 +1380,7 @@ width = 450;
 {
 export = 0;
 glyphname = _part.staff;
-lastChange = "2023-07-12 01:02:06 +0000";
+lastChange = "2023-07-16 23:07:39 +0000";
 layers = (
 {
 layerId = m01;
@@ -1398,12 +1423,12 @@ nodes = (
 (300,893.889,l),
 (400,892.222,ls),
 (550,889.5,o),
-(575,810,o),
-(580,750,cs),
-(590,630,o),
-(592,541,o),
-(592,500,c),
-(600,500,l),
+(562.5,865,o),
+(580,819,cs),
+(589.5,794,o),
+(592,691,o),
+(592,650,c),
+(600,650,l),
 (600,900,l),
 (300,900,l)
 );
@@ -1456,7 +1481,7 @@ topValue = 100;
 {
 export = 0;
 glyphname = _part.stem;
-lastChange = "2023-07-12 04:27:09 +0000";
+lastChange = "2023-07-16 23:00:37 +0000";
 layers = (
 {
 hints = (
@@ -1559,6 +1584,116 @@ nodes = (
 (20,0,l),
 (300,880,l),
 (294,880,l),
+(0,0,l)
+);
+}
+);
+width = 600;
+},
+{
+associatedMasterId = m01;
+hints = (
+{
+name = _corner.leftSerif;
+origin = (0,3);
+type = Corner;
+},
+{
+name = _corner.rightSerif;
+options = 1;
+origin = (0,0);
+type = Corner;
+}
+);
+layerId = "AF2E0F19-1B60-4EE5-A479-968FD8456FCB";
+name = "Upright Short";
+partSelection = {
+stemLength = 1;
+serifLength = 1;
+stemWidth = 1;
+stemAngle = 1;
+};
+shapes = (
+{
+closed = 1;
+nodes = (
+(20,0,l),
+(150,600,l),
+(144,600,l),
+(0,0,l)
+);
+}
+);
+width = 600;
+},
+{
+associatedMasterId = m01;
+hints = (
+{
+name = _corner.leftSerif;
+origin = (0,3);
+type = Corner;
+},
+{
+name = _corner.rightSerif;
+options = 1;
+origin = (0,0);
+scale = (3,0.6);
+type = Corner;
+}
+);
+layerId = "92E17FEF-DCC5-44C6-9995-F39E5DB9001A";
+name = "Short Sharpened";
+partSelection = {
+stemLength = 1;
+serifLength = 2;
+stemWidth = 1;
+stemAngle = 2;
+};
+shapes = (
+{
+closed = 1;
+nodes = (
+(20,0,l),
+(250,600,l),
+(244,600,l),
+(0,0,l)
+);
+}
+);
+width = 600;
+},
+{
+associatedMasterId = m01;
+hints = (
+{
+name = _corner.leftSerif;
+origin = (0,3);
+type = Corner;
+},
+{
+name = _corner.rightSerif;
+options = 1;
+origin = (0,0);
+scale = (3,0.6);
+type = Corner;
+}
+);
+layerId = "1B631D66-179C-4168-BF60-A02E33B6DEAC";
+name = "Upright Short Sharpened";
+partSelection = {
+stemLength = 1;
+serifLength = 2;
+stemWidth = 1;
+stemAngle = 1;
+};
+shapes = (
+{
+closed = 1;
+nodes = (
+(20,0,l),
+(150,600,l),
+(144,600,l),
 (0,0,l)
 );
 }
