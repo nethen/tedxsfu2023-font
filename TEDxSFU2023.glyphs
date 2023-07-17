@@ -9,10 +9,16 @@ DisplayStrings = (
 B,
 R,
 S,
+
 H,
 E,
 C,
 Q
+
+"/_part.pointstem L",
+P,
+N
+
 );
 axes = (
 {
@@ -618,12 +624,15 @@ unicode = 77;
 },
 {
 glyphname = N;
+
 lastChange = "2023-07-17 00:35:48 +0000";
+
 layers = (
 {
 layerId = m01;
 shapes = (
 {
+
 piece = {
 stemAngle = -50;
 stemLength = 92.5;
@@ -631,16 +640,35 @@ stemLength = 92.5;
 ref = _part.stem.001;
 },
 {
+
 closed = 1;
 nodes = (
 (600,150,l),
 (521,605,l),
+
 (235,900,l),
 (225,900,l),
 (507,617.5,o),
 (522,516.5,o),
 (590,150,c)
 );
+
+(230,900,l),
+(222.5,900,l),
+(507.5,614.5,o),
+(524.5,516.5,o),
+(592.5,150,c)
+);
+},
+{
+piece = {
+staffLength = 100;
+staffWidth = 0;
+};
+pos = (300,-225);
+ref = _part.staff;
+scale = (0.5,1.25);
+
 }
 );
 width = 600;
