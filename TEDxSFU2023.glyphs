@@ -15,7 +15,7 @@ A,
 K,
 Q,
 G,
-u,
+"/_part.stem.003/_part.staff u",
 P,
 U
 );
@@ -1065,7 +1065,7 @@ unicode = 116;
 },
 {
 glyphname = u;
-lastChange = "2023-07-17 00:02:07 +0000";
+lastChange = "2023-07-17 00:16:07 +0000";
 layers = (
 {
 layerId = m01;
@@ -1073,8 +1073,8 @@ shapes = (
 {
 closed = 1;
 nodes = (
-(494,300,l),
-(494,76.5,o),
+(491,300,l),
+(491,77.5,o),
 (374,30,o),
 (187.5,30,cs),
 (88.5,30,o),
@@ -1100,6 +1100,7 @@ scale = (0.4,1);
 {
 piece = {
 stemAngle = -100;
+topSerifLength = 100;
 };
 ref = _part.stem.003;
 }
@@ -1407,7 +1408,7 @@ topValue = 100;
 {
 export = 0;
 glyphname = _part.staff;
-lastChange = "2023-07-16 23:45:08 +0000";
+lastChange = "2023-07-17 00:15:26 +0000";
 layers = (
 {
 layerId = m01;
@@ -1510,11 +1511,11 @@ nodes = (
 (300,894,l),
 (400,892.5,ls),
 (550,890.5,o),
-(578,810,o),
-(580,750,cs),
-(584,630,o),
-(585,450,o),
-(585,300,c),
+(570.5,810,o),
+(572.5,750,cs),
+(576.5,630,o),
+(577.5,450,o),
+(577.5,300,c),
 (600,300,l),
 (600,900,l),
 (300,900,l)
@@ -2205,7 +2206,7 @@ topValue = 0;
 {
 export = 0;
 glyphname = _part.stem.003;
-lastChange = "2023-07-16 23:58:27 +0000";
+lastChange = "2023-07-17 00:14:30 +0000";
 layers = (
 {
 hints = (
@@ -2227,6 +2228,7 @@ partSelection = {
 stemLength = 2;
 stemWidth = 1;
 stemAngle = 2;
+topSerifLength = 1;
 };
 shapes = (
 {
@@ -2263,6 +2265,7 @@ partSelection = {
 stemLength = 2;
 stemWidth = 1;
 stemAngle = 1;
+topSerifLength = 1;
 };
 shapes = (
 {
@@ -2299,6 +2302,7 @@ partSelection = {
 stemLength = 1;
 stemWidth = 1;
 stemAngle = 1;
+topSerifLength = 1;
 };
 shapes = (
 {
@@ -2307,6 +2311,80 @@ nodes = (
 (20,0,l),
 (150,600,l),
 (144,600,l),
+(0,0,l)
+);
+}
+);
+width = 600;
+},
+{
+associatedMasterId = m01;
+hints = (
+{
+name = _corner.leftSerif;
+origin = (0,3);
+type = Corner;
+},
+{
+name = _corner.rightSerif;
+options = 1;
+origin = (0,2);
+scale = (1,1.5);
+type = Corner;
+}
+);
+layerId = "902356E4-1F1B-46EF-ADDD-3DB093914AC1";
+name = Thicker;
+partSelection = {
+stemLength = 2;
+stemWidth = 1;
+stemAngle = 2;
+topSerifLength = 2;
+};
+shapes = (
+{
+closed = 1;
+nodes = (
+(20,0,l),
+(300,900,l),
+(294,900,l),
+(0,0,l)
+);
+}
+);
+width = 600;
+},
+{
+associatedMasterId = m01;
+hints = (
+{
+name = _corner.leftSerif;
+origin = (0,3);
+type = Corner;
+},
+{
+name = _corner.rightSerif;
+options = 1;
+origin = (0,2);
+scale = (1,1.5);
+type = Corner;
+}
+);
+layerId = "357F620B-70BA-47B6-8952-31725386BEF3";
+name = "Upright Thicker";
+partSelection = {
+stemLength = 2;
+stemWidth = 1;
+stemAngle = 1;
+topSerifLength = 2;
+};
+shapes = (
+{
+closed = 1;
+nodes = (
+(20,0,l),
+(150,900,l),
+(144,900,l),
 (0,0,l)
 );
 }
@@ -2329,6 +2407,11 @@ topValue = 100;
 bottomValue = -100;
 name = stemAngle;
 topValue = 0;
+},
+{
+bottomValue = 0;
+name = topSerifLength;
+topValue = 100;
 }
 );
 }
