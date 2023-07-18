@@ -478,7 +478,7 @@ unicode = 73;
 },
 {
 glyphname = J;
-lastChange = "2023-07-17 00:48:42 +0000";
+lastChange = "2023-07-18 00:15:43 +0000";
 layers = (
 {
 layerId = m01;
@@ -499,6 +499,8 @@ nodes = (
 {
 piece = {
 stemAngle = -100;
+stemThickness = 12.5;
+topSerifWidth = 75;
 };
 pos = (298.5,0);
 ref = _part.stem.003;
@@ -508,6 +510,7 @@ width = 450;
 }
 );
 unicode = 74;
+changeCount = 6;
 },
 {
 glyphname = K;
@@ -2353,7 +2356,7 @@ topValue = 0;
 {
 export = 0;
 glyphname = _part.stem.003;
-lastChange = "2023-07-18 00:13:56 +0000";
+lastChange = "2023-07-18 00:15:04 +0000";
 layers = (
 {
 hints = (
@@ -2599,7 +2602,7 @@ type = Corner;
 name = _corner.rightSerif;
 options = 1;
 origin = (0,2);
-scale = (2,0.5);
+scale = (3,0.625);
 type = Corner;
 }
 );
@@ -2659,6 +2662,7 @@ name = topSerifWidth;
 topValue = 100;
 }
 );
+changeCount = 29;
 }
 );
 instances = (
