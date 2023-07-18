@@ -12,11 +12,15 @@ S,
 " H",
 E,
 T,
+<<<<<<< HEAD
 A,
 M
 U,
 u,
 "/_part.stem.003 J"
+=======
+A
+>>>>>>> parent of 2ff47ab (Updated J)
 );
 axes = (
 {
@@ -934,46 +938,49 @@ unicode = 84;
 },
 {
 glyphname = U;
-lastChange = "2023-07-18 00:00:06 +0000";
+lastChange = "2023-07-17 00:40:16 +0000";
 layers = (
 {
-hints = (
-{
-name = _corner.rightSerif;
-options = 1;
-origin = (0,7);
-type = Corner;
-}
-);
 layerId = m01;
 shapes = (
 {
 closed = 1;
 nodes = (
-(400,0,l),
-(400,7.5,l),
-(250,7.5,l),
-(150,7.5,o),
-(-4.5,92.5,o),
-(40,320,c),
-(150,900,l),
-(140,900,l),
-(0,175,l),
-(100,0,l)
+(500,300,l),
+(486,300,l),
+(486,100,o),
+(369,30,o),
+(182.5,30,cs),
+(83.5,30,o),
+(29.5,62,o),
+(43,161,c),
+(19.5,0,l),
+(100,0,ls),
+(475,0,o),
+(500,162.5,o),
+(500,287.5,c)
 );
 },
 {
 piece = {
 staffLength = 100;
-staffThickness = 75;
+staffThickness = 100;
 staffWidth = 0;
 };
-pos = (310,-225);
+pos = (260,0);
 ref = _part.staff;
-scale = (0.4,1.25);
+scale = (0.4,1);
+},
+{
+piece = {
+stemAngle = -100;
+stemThickness = 10;
+topSerifLength = 100;
+};
+ref = _part.stem.003;
 }
 );
-width = 550;
+width = 500;
 }
 );
 unicode = 85;
@@ -1255,52 +1262,49 @@ unicode = 116;
 },
 {
 glyphname = u;
-lastChange = "2023-07-18 00:02:50 +0000";
+lastChange = "2023-07-17 00:41:46 +0000";
 layers = (
 {
-hints = (
-{
-name = _corner.rightSerif;
-options = 1;
-origin = (0,7);
-type = Corner;
-}
-);
 layerId = m01;
 shapes = (
 {
 closed = 1;
 nodes = (
-(400,0,l),
-(400,7.5,l),
-(250,7.5,l),
-(150,7.5,o),
-(-14.5,92.5,o),
-(30,320,c),
-(150,900,l),
-(140,900,l),
-(0,250,l),
-(0,0,l)
+(500,300,l),
+(486,300,l),
+(486,100,o),
+(369,30,o),
+(182.5,30,cs),
+(83.5,30,o),
+(29.5,62,o),
+(43,161,c),
+(19.5,0,l),
+(100,0,ls),
+(475,0,o),
+(500,162.5,o),
+(500,287.5,c)
 );
 },
 {
 piece = {
 staffLength = 100;
-staffThickness = 75;
+staffThickness = 100;
 staffWidth = 0;
 };
-pos = (310,-225);
+pos = (260,0);
 ref = _part.staff;
-scale = (0.4,1.25);
+scale = (0.4,1);
 },
 {
 piece = {
-stemAngle = 0;
+stemAngle = -100;
+stemThickness = 10;
+topSerifLength = 100;
 };
-ref = _part.stem.001;
+ref = _part.stem.003;
 }
 );
-width = 550;
+width = 500;
 }
 );
 unicode = 117;
@@ -2401,7 +2405,7 @@ topValue = 0;
 {
 export = 0;
 glyphname = _part.stem.003;
-lastChange = "2023-07-18 00:13:56 +0000";
+lastChange = "2023-07-17 00:20:33 +0000";
 layers = (
 {
 hints = (
@@ -2425,7 +2429,6 @@ stemWidth = 1;
 stemAngle = 2;
 topSerifLength = 1;
 stemThickness = 1;
-topSerifWidth = 1;
 };
 shapes = (
 {
@@ -2464,7 +2467,6 @@ stemWidth = 1;
 stemAngle = 1;
 topSerifLength = 1;
 stemThickness = 1;
-topSerifWidth = 1;
 };
 shapes = (
 {
@@ -2503,7 +2505,6 @@ stemWidth = 1;
 stemAngle = 1;
 topSerifLength = 1;
 stemThickness = 1;
-topSerifWidth = 1;
 };
 shapes = (
 {
@@ -2542,7 +2543,6 @@ stemWidth = 1;
 stemAngle = 2;
 topSerifLength = 2;
 stemThickness = 1;
-topSerifWidth = 1;
 };
 shapes = (
 {
@@ -2581,7 +2581,6 @@ stemWidth = 1;
 stemAngle = 1;
 topSerifLength = 2;
 stemThickness = 1;
-topSerifWidth = 1;
 };
 shapes = (
 {
@@ -2620,7 +2619,6 @@ stemWidth = 1;
 stemAngle = 2;
 topSerifLength = 1;
 stemThickness = 2;
-topSerifWidth = 1;
 };
 shapes = (
 {
@@ -2629,45 +2627,6 @@ nodes = (
 (30,0,l),
 (310,900,l),
 (285,900,l),
-(0,0,l)
-);
-}
-);
-width = 600;
-},
-{
-associatedMasterId = m01;
-hints = (
-{
-name = _corner.leftSerif;
-origin = (0,3);
-type = Corner;
-},
-{
-name = _corner.rightSerif;
-options = 1;
-origin = (0,2);
-scale = (2,0.5);
-type = Corner;
-}
-);
-layerId = "AB1B5530-85B4-417F-B804-D48A9EC10252";
-name = "Wide Serif";
-partSelection = {
-stemLength = 2;
-stemWidth = 1;
-stemAngle = 1;
-topSerifLength = 1;
-stemThickness = 1;
-topSerifWidth = 2;
-};
-shapes = (
-{
-closed = 1;
-nodes = (
-(20,0,l),
-(150,900,l),
-(144,900,l),
 (0,0,l)
 );
 }
@@ -2699,11 +2658,6 @@ topValue = 100;
 {
 bottomValue = 0;
 name = stemThickness;
-topValue = 100;
-},
-{
-bottomValue = 0;
-name = topSerifWidth;
 topValue = 100;
 }
 );
