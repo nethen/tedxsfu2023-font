@@ -13,7 +13,14 @@ M,
 N,
 F,
 E,
-"/_part.stem.003 J"
+"/_part.stem.003 J",
+"/_part.staff U",
+"/_part.stroke/_part.stroke A",
+H,
+"/_part.stem.002 U",
+U,
+"",
+"/U.001"
 );
 axes = (
 {
@@ -23,6 +30,32 @@ tag = curv;
 );
 date = "2023-07-05 21:16:45 +0000";
 familyName = Chiaroscuro;
+featurePrefixes = (
+{
+automatic = 1;
+code = "languagesystem DFLT dflt;
+";
+name = Languagesystems;
+}
+);
+features = (
+{
+automatic = 1;
+code = "feature ss01;
+";
+tag = aalt;
+},
+{
+code = "sub U by U.001;";
+labels = (
+{
+language = dflt;
+value = "";
+}
+);
+tag = ss01;
+}
+);
 fontMaster = (
 {
 axesValues = (
@@ -52,16 +85,23 @@ visible = 1;
 glyphs = (
 {
 glyphname = A;
-lastChange = "2023-07-17 00:05:48 +0000";
+lastChange = "2023-07-18 08:19:36 +0000";
 layers = (
 {
 layerId = m01;
 shapes = (
 {
-pos = (-149,0);
+piece = {
+staffLength = 60;
+};
+pos = (-150,0);
 ref = _part.staff;
 },
 {
+piece = {
+Diagonal = -100;
+Rotate = 0;
+};
 pos = (-150,0);
 ref = _part.stroke;
 },
@@ -72,7 +112,7 @@ stemLength = 92.5;
 ref = _part.stem.001;
 }
 );
-width = 451;
+width = 450;
 }
 );
 unicode = 65;
@@ -1005,49 +1045,64 @@ unicode = 84;
 },
 {
 glyphname = U;
-lastChange = "2023-07-17 00:40:16 +0000";
+lastChange = "2023-07-18 08:51:45 +0000";
 layers = (
 {
+hints = (
+{
+name = _corner.leftSerif;
+origin = (0,7);
+type = Corner;
+},
+{
+name = _corner.rightSerif;
+options = 1;
+origin = (0,6);
+scale = (1,0.75);
+type = Corner;
+}
+);
 layerId = m01;
 shapes = (
 {
 closed = 1;
 nodes = (
-(500,300,l),
-(486,300,l),
-(486,100,o),
-(369,30,o),
-(182.5,30,cs),
-(83.5,30,o),
-(29.5,62,o),
-(43,161,c),
-(19.5,0,l),
-(100,0,ls),
-(475,0,o),
-(500,162.5,o),
-(500,287.5,c)
+(225,0,l),
+(225,5,l),
+(163,5,o),
+(33,32,o),
+(68,177.5,c),
+(237.5,900,l),
+(231.5,900,l),
+(0,0,l)
 );
 },
 {
-piece = {
-staffLength = 100;
-staffThickness = 100;
-staffWidth = 0;
-};
-pos = (260,0);
-ref = _part.staff;
-scale = (0.4,1);
-},
-{
-piece = {
-stemAngle = -100;
-stemThickness = 10;
-topSerifLength = 100;
-};
-ref = _part.stem.003;
+closed = 1;
+nodes = (
+(542,125,o),
+(400,5,o),
+(250,5,cs),
+(225,5,l),
+(225,0,l),
+(250,0,ls),
+(382.5,0,o),
+(500,50,o),
+(550,100,c),
+(550,900,l),
+(400,900,l),
+(400,894,l),
+(450,892,ls),
+(521.5,889,o),
+(537,817.5,o),
+(539.5,760,cs),
+(542.5,657.5,o),
+(541.5,452,o),
+(542,300,c)
+);
 }
 );
-width = 500;
+width = 550;
 }
 );
 unicode = 85;
@@ -1106,6 +1161,70 @@ width = 450;
 }
 );
 unicode = 90;
+},
+{
+glyphname = U.001;
+lastChange = "2023-07-18 08:58:47 +0000";
+layers = (
+{
+hints = (
+{
+name = _corner.rightSerif;
+options = 1;
+origin = (1,6);
+scale = (1,0.75);
+type = Corner;
+},
+{
+name = _corner.leftSerif;
+origin = (1,7);
+type = Corner;
+}
+);
+layerId = m01;
+shapes = (
+{
+piece = {
+staffLength = 86.6;
+staffThickness = 0;
+staffWidth = 0;
+};
+pos = (250,0);
+ref = _part.staff;
+scale = (0.5,1);
+},
+{
+closed = 1;
+nodes = (
+(225,0,l),
+(225,5,l),
+(163,5,o),
+(33,32,o),
+(68,177.5,c),
+(237.5,900,l),
+(231.5,900,l),
+(0,0,l)
+);
+},
+{
+closed = 1;
+nodes = (
+(398,6,o),
+(350,5,o),
+(250,5,cs),
+(225,5,l),
+(225,0,l),
+(250,0,ls),
+(332.5,0,o),
+(425,0,o),
+(475,50,c),
+(462.5,87.5,l)
+);
+}
+);
+width = 550;
+}
+);
 },
 {
 glyphname = a;
@@ -1506,7 +1625,7 @@ width = 600;
 {
 export = 0;
 glyphname = _part.bowl;
-lastChange = "2023-07-18 07:15:43 +0000";
+lastChange = "2023-07-18 08:13:01 +0000";
 layers = (
 {
 hints = (
@@ -1662,6 +1781,7 @@ hints = (
 {
 name = _corner.leftSerif;
 origin = (0,7);
+scale = (1.25,0.8);
 type = Corner;
 }
 );
@@ -1720,7 +1840,7 @@ topValue = 0;
 {
 export = 0;
 glyphname = _part.staff;
-lastChange = "2023-07-17 00:21:13 +0000";
+lastChange = "2023-07-18 08:18:05 +0000";
 layers = (
 {
 layerId = m01;
@@ -1739,9 +1859,9 @@ nodes = (
 (578,810,o),
 (580,750,cs),
 (584,630,o),
-(592.5,450,o),
-(592.5,300,c),
-(600,300,l),
+(592.5,150,o),
+(592.5,0,c),
+(600,0,l),
 (600,900,l),
 (300,900,l)
 );
@@ -1764,13 +1884,13 @@ closed = 1;
 nodes = (
 (300,893.889,l),
 (400,892.222,ls),
-(550,889.5,o),
-(562.5,865,o),
-(580,819,cs),
-(589.5,794,o),
-(592.5,691,o),
-(592.5,650,c),
-(600,650,l),
+(500,890.5,o),
+(550.5,867.5,o),
+(575,825,cs),
+(589.5,800,o),
+(592.5,791,o),
+(592.5,750,c),
+(600,750,l),
 (600,900,l),
 (300,900,l)
 );
