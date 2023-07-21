@@ -17,7 +17,9 @@ OUTPUT,
 T,
 D,
 "/_part.stem.002 VIVA LAS VEGAS",
-"/_part.stem.003 V"
+"/_part.stem.003 V",
+M,
+J
 );
 axes = (
 {
@@ -106,7 +108,7 @@ visible = 1;
 glyphs = (
 {
 glyphname = A;
-lastChange = "2023-07-20 02:26:28 +0000";
+lastChange = "2023-07-21 04:50:49 +0000";
 layers = (
 {
 layerId = m01;
@@ -128,6 +130,7 @@ ref = _part.stroke;
 },
 {
 piece = {
+stemAngle = -62.5;
 stemLength = 92.5;
 };
 ref = _part.stem.001;
@@ -635,9 +638,16 @@ unicode = 73;
 },
 {
 glyphname = J;
-lastChange = "2023-07-18 07:12:00 +0000";
+lastChange = "2023-07-21 07:14:14 +0000";
 layers = (
 {
+hints = (
+{
+name = _corner.leftSerif;
+origin = (1,8);
+type = Corner;
+}
+);
 layerId = m01;
 shapes = (
 {
@@ -654,12 +664,18 @@ nodes = (
 );
 },
 {
-piece = {
-stemAngle = -100;
-topSerifWidth = 75;
-};
-pos = (298.5,0);
-ref = _part.stem.003;
+closed = 1;
+nodes = (
+(318.5,0,l),
+(448.5,900,l),
+(180,900,l),
+(180,895,l),
+(275,895,l),
+(445,895,o),
+(418.5,847.5,o),
+(370.5,450,c),
+(298.5,0,l)
+);
 }
 );
 width = 450;
@@ -736,7 +752,7 @@ unicode = 75;
 },
 {
 glyphname = L;
-lastChange = "2023-07-16 23:29:47 +0000";
+lastChange = "2023-07-20 09:06:27 +0000";
 layers = (
 {
 layerId = m01;
@@ -768,13 +784,14 @@ unicode = 76;
 },
 {
 glyphname = M;
-lastChange = "2023-07-18 01:03:40 +0000";
+lastChange = "2023-07-21 19:19:30 +0000";
 layers = (
 {
 layerId = m01;
 shapes = (
 {
 piece = {
+stemAngle = -75;
 stemLength = 85;
 };
 ref = _part.stem.001;
@@ -826,14 +843,15 @@ unicode = 77;
 },
 {
 glyphname = N;
-lastChange = "2023-07-19 22:13:38 +0000";
+lastChange = "2023-07-21 04:51:19 +0000";
 layers = (
 {
 layerId = m01;
 shapes = (
 {
 piece = {
-stemLength = 100;
+stemAngle = -75;
+stemLength = 87.5;
 };
 pos = (-113,0);
 ref = _part.stem.001;
@@ -1248,11 +1266,64 @@ unicode = 86;
 },
 {
 glyphname = W;
-lastChange = "2023-07-06 07:15:09 +0000";
+lastChange = "2023-07-20 09:03:42 +0000";
 layers = (
 {
+hints = (
+{
+name = _corner.rightSerif;
+options = 1;
+origin = (1,2);
+type = Corner;
+},
+{
+name = _corner.rightSerif;
+options = 1;
+origin = (2,2);
+type = Corner;
+}
+);
 layerId = m01;
-width = 450;
+shapes = (
+{
+piece = {
+stemAngle = -50;
+stemThickness = 0;
+topSerifLength = 100;
+topSerifWidth = 0;
+};
+ref = _part.stem.003;
+},
+{
+closed = 1;
+nodes = (
+(129.5,0,l),
+(700,900,l),
+(687.5,900,l),
+(125,20,l),
+(61,50,o),
+(39,78.5,o),
+(71,224,c),
+(20,0,l)
+);
+},
+{
+closed = 1;
+nodes = (
+(479.5,0,l),
+(1050,900,l),
+(1037.5,900,l),
+(475,20,l),
+(396,20,o),
+(362.5,20,o),
+(362.5,184.5,c),
+(362.5,250,l),
+(350,250,l),
+(350,0,l)
+);
+}
+);
+width = 900;
 }
 );
 unicode = 87;
@@ -1281,11 +1352,21 @@ unicode = 89;
 },
 {
 glyphname = Z;
-lastChange = "2023-07-06 07:15:09 +0000";
+lastChange = "2023-07-21 04:47:45 +0000";
 layers = (
 {
 layerId = m01;
-width = 450;
+shapes = (
+{
+piece = {
+serifLength = 400;
+stemAngle = 0;
+stemLength = 0;
+};
+ref = _part.stem.001;
+}
+);
+width = 600;
 }
 );
 unicode = 90;
@@ -1545,6 +1626,68 @@ nodes = (
 }
 );
 width = 650;
+}
+);
+},
+{
+glyphname = W.001;
+layers = (
+{
+hints = (
+{
+name = _corner.rightSerif;
+options = 1;
+origin = (1,2);
+type = Corner;
+},
+{
+name = _corner.rightSerif;
+options = 1;
+origin = (2,2);
+type = Corner;
+}
+);
+layerId = m01;
+shapes = (
+{
+piece = {
+stemAngle = -50;
+stemThickness = 0;
+topSerifLength = 100;
+topSerifWidth = 0;
+};
+ref = _part.stem.003;
+},
+{
+closed = 1;
+nodes = (
+(129.5,0,l),
+(700,900,l),
+(687.5,900,l),
+(125,20,l),
+(61,50,o),
+(39,78.5,o),
+(71,224,c),
+(20,0,l)
+);
+},
+{
+closed = 1;
+nodes = (
+(479.5,0,l),
+(1050,900,l),
+(1037.5,900,l),
+(475,20,l),
+(396,20,o),
+(450,225,o),
+(467.5,275,c),
+(700,900,l),
+(687.5,900,l),
+(350,0,l)
+);
+}
+);
+width = 900;
 }
 );
 },
@@ -2492,7 +2635,7 @@ topValue = 0;
 {
 export = 0;
 glyphname = _part.stem.001;
-lastChange = "2023-07-20 02:09:29 +0000";
+lastChange = "2023-07-21 04:50:12 +0000";
 layers = (
 {
 hints = (
@@ -2520,8 +2663,8 @@ shapes = (
 closed = 1;
 nodes = (
 (20,0,l),
-(300,900,l),
-(294,900,l),
+(600,900,l),
+(594,900,l),
 (0,0,l)
 );
 }
@@ -2593,8 +2736,8 @@ shapes = (
 closed = 1;
 nodes = (
 (20,0,l),
-(300,900,l),
-(294,900,l),
+(600,900,l),
+(594,900,l),
 (0,0,l)
 );
 }
@@ -2666,8 +2809,8 @@ shapes = (
 closed = 1;
 nodes = (
 (20,0,l),
-(250,600,l),
-(244,600,l),
+(400,600,l),
+(394,600,l),
 (0,0,l)
 );
 }
