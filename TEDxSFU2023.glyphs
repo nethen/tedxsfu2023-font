@@ -23,7 +23,8 @@ MAGIC",
 "",
 "",
 "/T_H_E",
-B
+"BASK iN 
+THE SUN"
 );
 axes = (
 {
@@ -81,6 +82,17 @@ value = "";
 }
 );
 tag = ss03;
+},
+{
+automatic = 1;
+code = "lookupflag IgnoreMarks;
+sub T H E by T_H_E;
+";
+tag = dlig;
+},
+{
+code = "sub T H E by T_H_E;";
+tag = liga;
 }
 );
 fontMaster = (
@@ -168,7 +180,7 @@ unicode = (65,97);
 },
 {
 glyphname = B;
-lastChange = "2023-07-24 07:06:51 +0000";
+lastChange = "2023-07-24 07:07:14 +0000";
 layers = (
 {
 layerId = m01;
@@ -200,9 +212,9 @@ nodes = (
 (601.5,675,o),
 (607.5,645,cs),
 (635,513,o),
-(600,504,o),
-(475,504,c),
-(475,500,l),
+(609.5,504,o),
+(487.5,504,c),
+(487.5,500,l),
 (650,500,l),
 (550,900,l),
 (200,900,l)

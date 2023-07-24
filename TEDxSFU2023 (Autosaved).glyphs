@@ -23,7 +23,8 @@ MAGIC",
 "",
 "",
 "/T_H_E",
-B
+"BASK iN 
+THE SUN"
 );
 axes = (
 {
@@ -88,6 +89,10 @@ code = "lookupflag IgnoreMarks;
 sub T H E by T_H_E;
 ";
 tag = dlig;
+},
+{
+code = "sub T H E by T_H_E;";
+tag = liga;
 }
 );
 fontMaster = (
@@ -237,7 +242,6 @@ width = 650;
 }
 );
 unicode = (66,98);
-changeCount = 3;
 },
 {
 glyphname = C;
