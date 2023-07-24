@@ -134,7 +134,7 @@ visible = 1;
 glyphs = (
 {
 glyphname = A;
-lastChange = "2023-07-24 11:28:24 +0000";
+lastChange = "2023-07-24 12:50:10 +0000";
 layers = (
 {
 layerId = m01;
@@ -162,10 +162,11 @@ pos = (25,0);
 ref = _part.stemNeue.001;
 }
 );
-width = 675;
+width = 475;
 }
 );
 unicode = (65,97);
+changeCount = 1;
 },
 {
 glyphname = B;
