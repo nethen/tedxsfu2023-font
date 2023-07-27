@@ -35,12 +35,32 @@ E,
 "/E.001 C",
 NM,
 "1",
-A
+A,
+"/A.fina"
 );
 axes = (
 {
 name = curvature;
 tag = curv;
+}
+);
+classes = (
+{
+automatic = 1;
+code = "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z B.001 B.002 C.001 C.002 D.001 D.002 E.001 H.001 H.002 H.003 I.001 I.002 I.003 I.004 K.001 K.002 N.001 N.002 N.004 O.001 O.002 P.001 Q.002 U.001 U.002 U.003 U.004 V.001 W.001 Y.001 A.fina T_H_E T_H_E.001";
+name = AllLetters;
+},
+{
+code = "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z";
+name = Medial;
+},
+{
+code = "";
+name = Initial;
+},
+{
+code = A.fina;
+name = Final;
 }
 );
 date = "2023-07-05 21:16:45 +0000";
@@ -57,6 +77,8 @@ features = (
 {
 automatic = 1;
 code = "feature ss01;
+feature calt;
+feature fina;
 ";
 tag = aalt;
 },
@@ -83,6 +105,25 @@ tag = dlig;
 {
 code = "sub T H E by T_H_E;";
 tag = liga;
+},
+{
+code = "lookup INITIAL {
+   ignore sub @AllLetters @Medial';
+#   sub @Medial' by @Initial;
+} INITIAL;
+
+lookup FINAL {
+   ignore sub @Medial' @AllLetters;
+   sub @Medial' by @Final;
+} FINAL;
+";
+tag = calt;
+},
+{
+automatic = 1;
+code = "sub A by A.fina;
+";
+tag = fina;
 }
 );
 fontMaster = (
@@ -3135,6 +3176,47 @@ nodes = (
 }
 );
 width = 450;
+}
+);
+},
+{
+glyphname = A.fina;
+lastChange = "2023-07-27 21:23:24 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+piece = {
+staffLength = 60;
+};
+pos = (-125,0);
+ref = _part.staff;
+},
+{
+closed = 1;
+nodes = (
+(175,290,l),
+(385,290,o),
+(437,268,o),
+(455,210,cs),
+(462,187,o),
+(469,59,o),
+(471,0,c),
+(475,0,l),
+(475,300,l),
+(175,300,l)
+);
+},
+{
+piece = {
+length = 100;
+};
+pos = (25,0);
+ref = _part.stemNeue.001;
+}
+);
+width = 475;
 }
 );
 },
