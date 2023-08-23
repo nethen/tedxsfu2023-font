@@ -297,7 +297,9 @@ unicode = (66,98);
 },
 {
 glyphname = C;
-lastChange = "2023-08-23 20:43:10 +0000";
+kernLeft = a;
+kernRight = o;
+lastChange = "2023-08-23 21:37:44 +0000";
 layers = (
 {
 layerId = m01;
@@ -355,6 +357,7 @@ width = 625;
 }
 );
 unicode = (67,99);
+changeCount = 2;
 },
 {
 glyphname = D;
@@ -1758,7 +1761,9 @@ width = 750;
 },
 {
 glyphname = C.fina;
-lastChange = "2023-08-23 21:03:42 +0000";
+kernLeft = a;
+kernRight = o;
+lastChange = "2023-08-23 21:38:04 +0000";
 layers = (
 {
 layerId = m01;
@@ -1815,6 +1820,7 @@ nodes = (
 width = 625;
 }
 );
+changeCount = 2;
 },
 {
 glyphname = D.fina;
@@ -2653,8 +2659,9 @@ changeCount = 13;
 },
 {
 glyphname = T.fina;
+kernLeft = a;
 kernRight = t;
-lastChange = "2023-08-23 20:59:28 +0000";
+lastChange = "2023-08-23 21:37:28 +0000";
 layers = (
 {
 layerId = m01;
@@ -2683,6 +2690,7 @@ ref = _part.stemNeue.001;
 width = 675;
 }
 );
+changeCount = 1;
 },
 {
 glyphname = U.fina;
