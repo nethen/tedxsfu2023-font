@@ -27,7 +27,10 @@ E,
 "/P.fina",
 P,
 in,
-L
+L,
+"/L_A",
+"/T_H.fina",
+" "
 );
 axes = (
 {
@@ -42,7 +45,8 @@ code = "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z A.fina B.fina C.fina
 name = AllLetters;
 },
 {
-code = "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z";
+code = "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+";
 name = Medial;
 },
 {
@@ -116,6 +120,7 @@ sub W by W.fina;
 sub X by X.fina;
 sub Y by Y.fina;
 sub Z by Z.fina;
+sub T_H by T_H.fina;
 ";
 tag = fina;
 },
@@ -144,6 +149,7 @@ automatic = 1;
 code = "lookupflag IgnoreMarks;
 sub T H E by T_H_E;
 sub E J by E_J;
+sub L A by L_A;
 sub T H by T_H;
 ";
 tag = dlig;
@@ -3249,6 +3255,89 @@ metricLeft = E;
 metricRight = J;
 },
 {
+glyphname = L_A;
+lastChange = "2023-10-03 07:44:41 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+closed = 1;
+nodes = (
+(423,5,o),
+(474,40,o),
+(580,240,c),
+(585,237.5,l),
+(465.5,0,l),
+(210,0,l),
+(210,5,l),
+(290.5,5,l)
+);
+},
+{
+closed = 1;
+nodes = (
+(148,175.5,ls),
+(97.5,33,o),
+(50,5,o),
+(0,5,c),
+(0,0,l),
+(210,0,l),
+(210,5,l),
+(160,5,o),
+(117,32,o),
+(165,174,cs),
+(411.5,900,l),
+(245,900,l),
+(245,895,l),
+(250,895,ls),
+(400,895,o),
+(382,832,o),
+(362.5,777.5,cs)
+);
+},
+{
+closed = 1;
+nodes = (
+(525,894,l),
+(625,892,ls),
+(755,889.5,o),
+(799,865.5,o),
+(810,812.5,cs),
+(818,730.5,o),
+(817.5,406.5,o),
+(817.5,300,c),
+(825,300,l),
+(825,872.5,l),
+(825,900,l),
+(525,900,l)
+);
+},
+{
+piece = {
+Diagonal = -100;
+Rotate = 0;
+};
+pos = (225,0);
+ref = _part.stroke;
+},
+{
+closed = 1;
+nodes = (
+(440,174,l),
+(679.5,877.5,l),
+(673.5,877.5,l),
+(423,175.5,l)
+);
+}
+);
+width = 825;
+}
+);
+metricLeft = L;
+metricRight = A;
+},
+{
 glyphname = T_H;
 kernLeft = a;
 kernRight = a;
@@ -3406,6 +3495,26 @@ width = 1450;
 );
 metricLeft = T;
 metricRight = E;
+},
+{
+glyphname = L_A.001;
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+ref = L;
+},
+{
+pos = (275,0);
+ref = A;
+}
+);
+width = 825;
+}
+);
+metricLeft = L;
+metricRight = A;
 },
 {
 glyphname = T_H.002;
@@ -3697,6 +3806,73 @@ width = 1350;
 );
 },
 {
+glyphname = T_H.fina;
+kernLeft = a;
+kernRight = a;
+lastChange = "2023-10-03 07:45:50 +0000";
+layers = (
+{
+layerId = m01;
+shapes = (
+{
+pos = (100,0);
+ref = _part.stemNeue.001;
+},
+{
+closed = 1;
+nodes = (
+(1000,0,l),
+(992.5,0,l),
+(986,827,l),
+(985.5,887,o),
+(952.5,897,o),
+(902.5,897,c),
+(902.5,900,l),
+(986,900,l),
+(1000,900,l)
+);
+},
+{
+closed = 1;
+nodes = (
+(498,175.5,ls),
+(447.5,33.5,o),
+(400,5,o),
+(350,5,c),
+(350,0,l),
+(560,0,l),
+(560,5,l),
+(510,5,o),
+(467,32,o),
+(515,174,cs),
+(761.5,900,l),
+(125,900,l),
+(125,895,l),
+(662.5,893,ls),
+(737.5,892.5,o),
+(709.5,770,o),
+(687,706.5,cs)
+);
+},
+{
+closed = 1;
+nodes = (
+(988,500,l),
+(988,587.5,o),
+(976.5,595,o),
+(692.5,595,c),
+(695,600,l),
+(988.5,600,l)
+);
+}
+);
+width = 1000;
+}
+);
+metricLeft = T;
+metricRight = H;
+},
+{
 glyphname = T_H_E.isol;
 lastChange = "2023-08-23 23:29:28 +0000";
 layers = (
@@ -3806,11 +3982,11 @@ metricRight = E;
 },
 {
 glyphname = space;
-lastChange = "2023-07-20 02:07:25 +0000";
+lastChange = "2023-10-07 21:17:26 +0000";
 layers = (
 {
 layerId = m01;
-width = 450;
+width = 250;
 }
 );
 unicode = 32;
