@@ -18,7 +18,7 @@ HHZHHOOZOO
 to ta at ot
 az tz zt xx
 ai ex
-",
+ 7",
 "roy thompson is /_part.bowl present",
 it,
 "/T.fina",
@@ -32,7 +32,9 @@ E,
 P,
 in,
 L,
-"7za grand"
+"7za grand",
+"/Y.fina",
+a
 );
 axes = (
 {
@@ -682,7 +684,7 @@ unicode = (72,104);
 glyphname = I;
 kernLeft = i;
 kernRight = i;
-lastChange = "2023-10-25 05:34:08 +0000";
+lastChange = "2023-11-10 23:56:51 +0000";
 layers = (
 {
 layerId = m01;
@@ -1472,7 +1474,7 @@ unicode = (87,119);
 glyphname = X;
 kernLeft = x;
 kernRight = x;
-lastChange = "2023-10-25 05:37:35 +0000";
+lastChange = "2023-11-10 23:57:04 +0000";
 layers = (
 {
 hints = (
@@ -1542,7 +1544,7 @@ unicode = (88,120);
 glyphname = Y;
 kernLeft = z;
 kernRight = o;
-lastChange = "2023-08-24 01:20:35 +0000";
+lastChange = "2023-11-10 23:57:10 +0000";
 layers = (
 {
 layerId = m01;
@@ -4014,10 +4016,72 @@ unicode = 50;
 },
 {
 glyphname = three;
+kernLeft = o;
+kernRight = o;
+lastChange = "2023-11-10 22:43:45 +0000";
 layers = (
 {
 layerId = m01;
-width = 500;
+shapes = (
+{
+closed = 1;
+nodes = (
+(324.5,0,l),
+(324.5,5,l),
+(274.5,5,o),
+(239.5,10.5,o),
+(314,73.5,c),
+(612.5,345.5,l),
+(608.5,345.5,l),
+(277.5,65,o),
+(236,3,o),
+(93,4,cs),
+(26,4.5,o),
+(25.5,19,o),
+(61,112.5,c),
+(56,112.5,l),
+(6,0,l)
+);
+},
+{
+closed = 1;
+nodes = (
+(607.5,672.5,o),
+(513.5,661.5,o),
+(376.5,600,c),
+(379.5,593.5,l),
+(612.5,680,l),
+(612.5,900,l),
+(247.5,900,l),
+(175,700,l),
+(180,700,l),
+(205,756.5,ls),
+(253.5,866.5,o),
+(273,895,o),
+(355,895,cs),
+(517.5,895,ls),
+(595,895,o),
+(607.5,862.5,o),
+(607.5,775,cs)
+);
+},
+{
+closed = 1;
+nodes = (
+(379.5,593.5,l),
+(518.5,593.5,o),
+(565,589,o),
+(591.5,543,cs),
+(604.5,520.5,o),
+(608.5,420.5,o),
+(608.5,345.5,c),
+(612.5,345.5,l),
+(612.5,600,l),
+(391,600,l)
+);
+}
+);
+width = 612.5;
 }
 );
 unicode = 51;
@@ -5988,7 +6052,10 @@ m01 = {
 };
 "@MMK_L_l" = {
 "@MMK_R_a" = -87.5;
+"@MMK_R_i" = -87.5;
 "@MMK_R_o" = -50;
+"@MMK_R_x" = -87.5;
+"@MMK_R_z" = -87.5;
 };
 "@MMK_L_o" = {
 "@MMK_R_a" = -150;
